@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{  
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* header */
+:root{
+    --main-color: #07A6BA;
+    --font: 'Roboto', sans-serif;
+}
+nav{
+    position: fixed;
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    padding: 0 10%;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav>ul>li{
+    display: inline-block;
+    position: relative;
+    padding: 20px;
+    font-family: var(--font);
+}
+.mega-menu{
+    width: 80vw;
+    display: none;
+    margin: auto;
+    background-color: var(--main-color);
+    position: absolute;
+    object-fit: cover;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2vh;
+    position: fixed;
+    left: 10%;
+    top: 55px;
+}
+nav>ul>li:hover .mega-menu {
+    display: grid;
+}
+nav ul>li:hover{
+    color: yellow;
+}
+.extend{
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+}
+.extend form, a{
+    margin: 0% 2%;
+}
+.search{
+    width: 300px;
+    height: 26px;
+    display: flex;
+    background-color: white;
+    border: 0;
+    border-radius: 10px;
+}
+.search i{
+    padding: 6px;
+    font-size: 0.8em;
+}
+.search input{
+    height: 26px;
+    border: none;
+}
+/* logonuud */
+.logo{
+    width: 60px;
+}
+.basketlogo, .savelogo, .profilelogo{
+    width: 25px;
+}
+.atag{
+    margin: 0;
+}
+.atagi{
+    margin-top: 1%;
+}
+/*footer*/
+#footer{
+    width: 100%;
+    display: flex;
+    background-color: var(--main-color);
+    padding: 0.7% 10%;
+}
+.footer-columns{
+    width: 20%;
+}
+.footer-items, .footer-title{
+    display: block;
+    padding: 4%;
+}
+.footer-title{
+    color: black;
+    font-family: var(--font);
+    font-size: 14pt;
+    font-weight: 500;
+}
+.footer-items{
+    margin: 0;
+    color: white;
+    font-family: var(--font);
+    font-size: 0.9em;
+    font-weight: 400;
+}
+.fa-brands{
+    color: white;
+}
+#c{
+    padding: 0 10%;
+    background-color: var(--main-color);
+}
+#c p{
+    padding: 1% 0%;
+    color: white;
+    font-family: var(--font);
+    font-size: 0.9em;
+    font-weight: 400;
+    border-top: 1px solid black;
+}
