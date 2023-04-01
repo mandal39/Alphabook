@@ -1,0 +1,11 @@
+/*main*/
+main{
+    display: flex;
+    padding: 55px 10%;
+}
+.basket-container{
+    width: 70%;
+}
+.book-container{
+    display: flex;
+}
