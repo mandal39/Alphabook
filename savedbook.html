@@ -7,67 +7,65 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <meta name="keywords" content="Alphabook, Ном, book, зохиол, зохиолч">
     <meta name="description" content="Ном, зохиол сонирходог хүн болоод худалдаж авах сонирхолтой хүмүүст зориулав">
-    <link rel='stylesheet' type='text/css' media='screen' href='savedbook.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='header_footer.css' >
+    <link rel='stylesheet' type='text/css' media='screen' href='savedbook.css' >
+    <script src="https://kit.fontawesome.com/0ba20bc6a3.js" crossorigin="anonymous"></script>
     <script src='main.js'></script>
 </head>
 <body>
     <header>
         <nav>
-            <img src="alphabook.png" alt="logo">
-            <form class="example" action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit">Search</button>
-            </form>
-            <a href="savedbook.html"><img src="save.png" alt="savelogo"></a>
-            <a href="basket.html"><img src="basket.png" alt="basketlogo"></a>
-            <a href="profile.html"><img src="profile.png" alt="profilelogo"></a>
+            <a class="atag" href="index.html"><img src="logo.png" alt="logo" class="logo"></a>
             <ul>
-                <div class="sub-menu">
-                        <div class="content">
-                        <div class="column">
-                            <ul>
-                            <a href=""><li>Түүх</li></a>
-                            <a href=""><li>Уран зохиол</li></a>
-                            <a href=""><li>Урлаг соёл</li></a>
-                            <a href=""><li>Намтар, дурсамж</li></a>
-                            <a href=""><li>Хэл, толь бичиг</li></a>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <ul>
-                            <a href=""><li>Анагаах ухаан</li></a>
-                            <a href=""><li>Спорт</li></a>
-                            <a href=""><li>Аж үйлдвэр</li></a>
-                            <a href=""><li>Хүүхдийн ном</li></a>
-                            <a href=""><li>Философи</li></a>
-                            </ul>
-                        </div>
-                        <div class="column">
-                            <ul>
-                            <a href=""><li>Хууль, эрх зүй</li></a>
-                            <a href=""><li>Шинжлэх ухаан</li></a>
-                            <a href=""><li>Бизнес эдийн засаг</li></a>
-                            <a href=""><li>Хувь хүний хөгжил</li></a>
-                            </ul>
-                        </div>
-                        </div>
-                    </div>
-                <li>Анагаах ухаан</li>
-                <li>Бизнес эдийн засаг</li>
-                <li>Спорт</li>
-                <li>Түүх</li>
-                <li>Уран зохиол</li>
-                <li>Урлаг соёл</li>
-                <li>Философи</li>
-                <li>Хууль, эрх зүй</li>
-                <li>Шинжлэх ухаан</li>
-                <li>Намтар, дурсамж</li>
-                <li>Хувь хүний хөгжил</li>
-                <li>Хэл, толь бичиг</li>
-                <li>Аж үйлдвэр</li>
+                <li class="type" onmouseover="hoverFunc()" onmouseout="unhoverFunc()">Төрөл
+                    <ul class="mega-menu">        
+                        <li><a href="">Түүх</a></li>
+                        <li><a href="">Уран зохиол</a></li>
+                        <li><a href="">Урлаг соёл</a></li>
+                        <li><a href="">Намтар, дурсамж</a></li>
+                        <li><a href="">Хэл, толь бичиг</a></li>
+                        <li><a href="">Анагаах ухаан</a></li>
+                        <li><a href="">Спорт</a></li>
+                        <li><a href="">Аж үйлдвэр</a></li>
+                        <li><a href="">Хүүхдийн ном</a></li>
+                        <li><a href="">Философи</a></li>
+                        <li><a href="">Хууль, эрх зүй</a></li>
+                        <li><a href="">Шинжлэх ухаан</a></li>
+                        <li><a href="">Бизнес эдийн засаг</a></li>
+                        <li><a href="">Хувь хүний хөгжил</a></li>
+                    </ul>
+                </li>
+                <li class="type">Шинэ ном
+                    <ul class="mega-menu">        
+                        <li><a href="">aaaa</a></li>
+                        <li><a href="">Уран зохиол</a></li>
+                        <li><a href="">Урлаг соёл</a></li>
+                        <li><a href="">Намтар, дурсамж</a></li>
+                        <li><a href="">Хэл, толь бичиг</a></li>
+                        <li><a href="">Анагаах ухаан</a></li>
+                        <li><a href="">Спорт</a></li>
+                        <li><a href="">Аж үйлдвэр</a></li>
+                        <li><a href="">Хүүхдийн ном</a></li>
+                        <li><a href="">Философи</a></li>
+                        <li><a href="">Хууль, эрх зүй</a></li>
+                        <li><a href="">Шинжлэх ухаан</a></li>
+                        <li><a href="">Бизнес эдийн засаг</a></li>
+                        <li><a href="">Хувь хүний хөгжил</a></li>
+                    </ul>
+                </li>
+                <li>Хамгийн их худалдагдсан ном</li>
+                <li>Хямдралтай ном</li>
                 <li>Гадаад ном</li>
-                <li>Хүүхдийн ном</li>
             </ul>
+            <section class="extend">
+                <form class="search" action="/action_page.php">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Хайх..." name="search">
+                </form>
+                <a class="atagi" href="basket.html"><img src="basket.png" alt="basketlogo" class="basketlogo"></a>
+                <a class="atagi" href="savedbook.html"><img src="save1.png" alt="savelogo" class="savelogo"></a>
+                <a class="atagi" href="profile.html"><img src="profile.png" alt="profilelogo" class="profilelogo"></a>
+            </section>
         </nav>
     </header>
     <main>
@@ -112,27 +110,32 @@
         </section>
     </main>
     <footer>
-        <section>
-            <h2>Alphabook</h2>
-            <a href="https://www.google.com">Бидний тухай</a>
-            <a href="https://www.google.com">Манай дэлгүүрүүд</a>
-            <a href="https://www.google.com">Хамтран ажиллах</a>
+        <section id="footer">
+            <section class="footer-columns">
+                <h2 class="footer-title">Alphabook</h2>
+                <a class="footer-items" href="https://www.google.com">Бидний тухай</a>
+                <a class="footer-items" href="https://www.google.com">Манай дэлгүүрүүд</a>
+                <a class="footer-items" href="https://www.google.com">Хамтран ажиллах</a>
+            </section>
+            <section class="footer-columns">
+                <h2 class="footer-title">Тусламж</h2>
+                <a class="footer-items" href="https://www.google.com">Түгээмэл асуултууд</a>
+                <a class="footer-items" href="https://www.google.com">Үйлчилгээний нөхцөл</a>
+                <a class="footer-items" href="https://www.google.com">Нууцлалын бодлого</a>
+            </section>
+            <section class="footer-columns">
+                <h2 class="footer-title">Холбоо барих</h2>
+                <a class="footer-items" href="tel:+97677179988">+976 77179988</a>
+                <a class="footer-items" href="mailto:publishing.alpha@gmail.com">publishing.alpha@gmail.com</a>
+            </section>
+            <section class="footer-icons">
+                <a class="footer-icon" href="https://www.google.com"><i class="fa-brands fa-facebook"></i></a>
+                <a class="footer-icon" href="https://www.google.com"><i class="fa-brands fa-facebook"></i></a>
+                <a class="footer-icon" href="https://www.google.com"><i class="fa-brands fa-facebook"></i></a>
+            </section>
         </section>
-        <section>
-            <h2>Тусламж</h2>
-            <a href="https://www.google.com">Түгээмэл асуултууд</a>
-            <a href="https://www.google.com">Үйлчилгээний нөхцөл</a>
-            <a href="https://www.google.com">Нууцлалын бодлого</a>
-        </section>
-        <section>
-            <h2>Холбоо барих</h2>
-            <a href="tel:+97677179988">+976 77179988</a>
-            <a href="mailto:publishing.alpha@gmail.com">Бидний тухай</a>
-        </section>
-        <section>
-            <a href="https://www.google.com"><img src="instagram.png" alt="ig"></a>
-            <a href="https://www.google.com"><img src="facebook.png" alt="fb"></a>
-            <a href="https://www.google.com"><img src="youtube.png" alt="yt"></a>
+        <section id="c">
+            <p>© 2023 ALPHABOOK. All right reserved.</p>
         </section>
     </footer>
 </body>
