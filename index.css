@@ -1,0 +1,20 @@
+:root{
+    --back-gray-color: #F5F5F5;
+}
+.single-type{
+    border: 1px solid black;
+}
+.type-books{
+    display: flex;
+}
+.book{
+    padding: 1%;
+    width: 230px;
+}
+.bookimg{
+    width: 200px;
+}
+main{
+    padding: 55px 10%;
+    background-color: var(--back-gray-color);
+}
