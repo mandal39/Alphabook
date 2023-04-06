@@ -6,101 +6,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="alphabook, bookstore,store, захилга,Захиалгын мэдээлэл, онлайн захилга, номын дэлгүүр">
     <meta name="description" content="Alphabook номын дэлгүүрийн онлайн захиалгын хэсэг">
+    <link rel="stylesheet" href="orderstyle.css">
     <title>Buy</title>
 </head>
 <body>
-    <div>
-        <h2>Захиалгын мэдээлэл</h2>
-        <form>
-            <div>
-                <label for="name">Овог нэр
-                <input type="text" required placeholder="Овог нэр">
-            </label>
+<header>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title">Захиалгын мэдээлэл</h3>
+
+                    <div class="inputBox">
+                        <span>Овог нэр :</span>
+                        <input type="text" placeholder="Нэр">
+                    </div>
+                    <div class="inputBox">
+                        <span>E-mail :</span>
+                        <input type="email" placeholder="bat@gmail.com">
+                    </div>
+                    <div class="inputBox">
+                        <label for="address">Хот/аймаг
+                            <select>
+                                <option value="Улаанбаатар">Улаанбаатар</option>
+                                <option value="Архангай">Архангай</option>
+                                <option value="Баян-Өлгий">Баян-Өлгий</option>
+                                <option value="Баянхонгор">Баянхонгор</option>
+                                <option value="Булган">Булган</option>
+                                <option value="Говь-Алтай">Говь-Алтай</option>
+                                <option value="Говьсүмбэр">Говьсүмбэр</option>
+                                <option value="Дархан-Уул">Дархан-Уул</option>
+                                <option value="Дорноговь">Дорноговь</option>
+                                <option value="Дорнод">Дорнод</option>
+                                <option value="Дундговь">Дундговь</option>
+                                <option value="Завхан">Завхан</option>
+                                <option value="Орхон">Орхон</option>
+                                <option value="Өвөрхангай">Өвөрхангай</option>
+                                <option value="Өмнөговь">Өмнөговь</option>
+                                <option value="Сүхбаатар">Сүхбаатар</option>
+                                <option value="Сэлэнгэ">Сэлэнгэ</option>
+                                <option value="Төв">Төв</option>
+                                <option value="Увс">Увс</option>
+                                <option value="Ховд">Ховд</option>
+                                <option value="Хөвсгөл">Хөвсгөл</option>
+                                <option value="Хэнтий">Хэнтий</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="inputBox">
+                        <span>Хаяг :</span>
+                        <input type="text" placeholder="Гудамж, орц, тоот...">
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Утасны дугаар :</span>
+                            <input type="text" placeholder="9999-хххх">
+                        </div>
+                        <div class="inputBox">
+                            <span>Орцны код :</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3 class="title">Төлбөрийн мэдээлэл</h3>
+                    <div class="inputBox">
+                        <span>Төлбөрийн картууд :</span>
+                        <img src="card_img.png" alt="acceptedCards">
+                    </div>
+
+                    <div class="inputBox">
+                        <span>Картан дээрх нэр :</span>
+                        <input type="text" placeholder="Bat-Erdene Dorj">
+                    </div>
+                    <div class="inputBox">
+                        <span>Картны дугаар :</span>
+                        <input type="number" placeholder="1111-2222-3333-4444">
+                    </div>
+                    <div class="inputBox">
+                        <label for="cardExp">Картны дуусах сар
+                            <select>
+                                <option value="Jan">1</option>
+                                <option value="Feb">2</option>
+                                <option value="Mar">3</option>
+                                <option value="Apr">4</option>
+                                <option value="May">5</option>
+                                <option value="Jun">6</option>
+                                <option value="Jul">7</option>
+                                <option value="Aug">8</option>
+                                <option value="Sep">9</option>
+                                <option value="Oct">10</option>
+                                <option value="Nov">11</option>
+                                <option value="Dec">12</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Картны дуусах он :</span>
+                            <input type="number" placeholder="2023">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="number" placeholder="123">
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
-            <div>
-                <label for="address">Хот/аймаг
-                    <select>
-                        <option value="Улаанбаатар">Улаанбаатар</option>
-                        <option value="Архангай">Архангай</option>
-                        <option value="Баян-Өлгий">Баян-Өлгий</option>
-                        <option value="Баянхонгор">Баянхонгор</option>
-                        <option value="Булган">Булган</option>
-                        <option value="Говь-Алтай">Говь-Алтай</option>
-                        <option value="Говьсүмбэр">Говьсүмбэр</option>
-                        <option value="Дархан-Уул">Дархан-Уул</option>
-                        <option value="Дорноговь">Дорноговь</option>
-                        <option value="Дорнод">Дорнод</option>
-                        <option value="Дундговь">Дундговь</option>
-                        <option value="Завхан">Завхан</option>
-                        <option value="Орхон">Орхон</option>
-                        <option value="Өвөрхангай">Өвөрхангай</option>
-                        <option value="Өмнөговь">Өмнөговь</option>
-                        <option value="Сүхбаатар">Сүхбаатар</option>
-                        <option value="Сэлэнгэ">Сэлэнгэ</option>
-                        <option value="Төв">Төв</option>
-                        <option value="Увс">Увс</option>
-                        <option value="Ховд">Ховд</option>
-                        <option value="Хөвсгөл">Хөвсгөл</option>
-                        <option value="Хэнтий">Хэнтий</option>
-                </select>
-            </label>
-            </div>
-            <div>
-                <label for="address">Дүүрэг/сум
-                    <select name="" id="Дүүрэг/сум">
-                        <option value="Багануур">Багануур</option>
-                        <option value="Багахангай">Багахангай</option>
-                        <option value="Баянгол">Баянгол</option>
-                        <option value="Баянзүрх">Баянгол</option>
-                        <option value="Налайх">Налайх</option>
-                        <option value="Сонгино хайрхан">Сонгино хайрхан</option>
-                        <option value="Сүхбаатар">Сүхбаатар</option>
-                        <option value="Хан-Уул">Хан-Уул</option>
-                        <option value="Чингэлтэй">Чингэлтэй</option>
-                        
-                    
-                    </select>
-                </label>
-            </div>
-            <div>
-                <label for="address">Хороо/баг
-                    <select name="" id="Хороо/баг">
-                        <option value="1-р хороо">1-р хороо</option>
-                        <option value="2-р хороо">2-р хороо</option>
-                        <option value="3-р хороо">3-р хороо</option>
-                        <option value="4-р хороо">4-р хороо</option>
-                        <option value="5-р хороо">5-р хороо</option>
-                        <option value="6-р хороо">6-р хороо</option>
-                        <option value="7-р хороо">7-р хороо</option>
-                        <option value="8-р хороо">8-р хороо</option>
-                        <option value="9-р хороо">9-р хороо</option>
-                        <option value="10-р хороо">10-р хороо</option>
-                        <option value="11-р хороо">11-р хороо</option>
-                        <option value="12-р хороо">12-р хороо</option>
-                        <option value="13-р хороо">13-р хороо</option>
-                    </select>
-                </label>
-            </div>
-            <div>
-                <label for="entrance">Орцны код
-                    <input type="text" required placeholder="Орцны код">
-                </label>
-            </div>
-            <div>
-                <label for="phone">Утасны дугаар
-                    <input type="tel" pattern="[8-9]{1}[0-9]{7}" required placeholder="Утасны дугаар">
-                </label>
-            </div>
-            <div>
-                <label for="detailed">Дэлгэрэнгүй хаяг
-                    <br>
-                    <textarea name="" id="" cols="40" rows="10" name="Дэлгэрэнгүй хаяг" ></textarea>
-                </label>
-            </div>
-            <button>
-                Төлбөр төлөх
-            </button>
+            <input type="submit" value="Төлбөр төлөх" class="submit-btn">
         </form>
     </div>
+</header>
 </body>
 </html>
