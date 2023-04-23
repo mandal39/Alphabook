@@ -1,5 +1,6 @@
 :root{
     --back-gray-color: #F5F5F5;
+    --main-color: #07A6BA;
 }
 .single-type{
     border: 1px solid black;
@@ -14,9 +15,10 @@
 .bookimg{
     width: 200px;
 }
-main{
-    padding: 55px 10%;
-    background-color: var(--back-gray-color);
+
+.type-container {
+  padding: 55px 10%;
+  background-color: var(--back-gray-color);
 }
 
 .column {
@@ -29,6 +31,13 @@ main{
   content: "";
   display: table;
   clear: both;
+}
+
+hr.new1 {
+  border: 30px solid var(--back-gray-color);
+  border-radius: 5px;
+  margin-left: 100px;
+  margin-right: 10%;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
@@ -47,10 +56,11 @@ main{
   padding-right: 20px;
 }
 
-.main-book {
-  font-family: 'Indie Flower', cursive !important;
-  margin: 0px;
-  padding: 0px;
+.book-main {
+  padding: 3%;
+  height: 600px;
+  width: 100%;
+  background-color: var(--main-color);
 }
 
 ::selection {
